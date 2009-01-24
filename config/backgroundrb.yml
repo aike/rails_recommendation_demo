@@ -1,0 +1,10 @@
+--- 
+:backgroundrb: 
+  :ip: 0.0.0.0
+  :port: 11006
+:schedules:
+ :recommend_worker:
+   :do_flush:
+     :trigger_args: 0 0 4 * * * *
+   :do_analyze:
+     :trigger_args: 0 0 5 * * * *

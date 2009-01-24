@@ -1,0 +1,24 @@
+<h1>ブックマーク詳細</h1>
+
+<h1><%=h @webpage.title %></h1>
+<span class="url"><%= link_to @webpage.url, @webpage.url %></span>
+<br />
+
+<h3>◆このページをブックマークしているユーザ</h3>
+<table>
+<% for bookmark in @bookmarks %>
+  <tr>
+    <td><strong><%=h bookmark.user.login %></strong></td>
+    <td><%=h bookmark.comment %><br /></td>
+  </tr>
+<% end %>
+</table>
+
+<h3>◆おすすめページ</h3>
+<% for rec in @recommends %>
+  <%= link_to rec.title, rec.url %><br />
+<% end %>
+<br />
+
+<%= link_to 'Edit', edit_webpage_path(@webpage) %> |
+<%= link_to 'Home', bookmarks_path %>

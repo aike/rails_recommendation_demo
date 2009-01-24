@@ -1,0 +1,110 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background-color: #FFFFFF;
+}
+
+a:link, a:visited, a:active {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF9900;
+}
+
+
+#thebox {
+    width: 50em;
+    background-color: white;
+    color: #666;
+    border: 1px #cccccc solid;
+    margin: 20px auto 0px auto;
+    padding: 0px 20px 0 20px
+}
+
+#logo { 
+    text-align: center;
+    width: 143px;
+    margin: 0px 5px 30px -10px;
+    padding: 20px 10px 5px 10px;
+    background-color: #006699;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+#nav {
+    width: 455px;
+    margin: -55px 0px 30px 130px;
+    padding: 0px 0px 0px 0px;
+    color: #999;
+    font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+#nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+#nav a {
+    font-size: 10px;
+    font-weight: bold;
+    color: #999;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    color: #006699;
+    text-decoration: underline;
+}
+
+#content {
+    color: #666;
+    font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 10px 10px;
+}
+
+#content h1 {
+    font-size: 14px;
+    margin: 20px 0px 0px 0px;
+}
+
+#content h1 a:link, a:visited, a:active {
+    color: #006699;
+    font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+#content h1 a:hover {
+    text-decoration: underline;
+    font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+    color: #006699;
+}
+
+#content h2 { 
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#content h3 { 
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px 0px 5px 0px;
+}
+
+.url {
+    color: #228822;
+}
+
+.url a:link, .url a:visited, .url a:active {
+    color: #228822;
+}
+

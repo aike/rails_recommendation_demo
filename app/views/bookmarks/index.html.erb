@@ -1,0 +1,9 @@
+<h2><strong><%= current_user.login %></strong>さんのブックマーク</h2>
+<% for bookmark in @bookmarks %>
+   <h1><%= link_to bookmark.webpage.title, :controller => 'webpages', :action => 'show', :id => bookmark.webpage_id %></h1>
+   <span class="url"><%= link_to bookmark.webpage.url, bookmark.webpage.url %></span><br />
+   <%=h bookmark.comment %><br />
+
+   <%= link_to '編集', edit_bookmark_path(bookmark) %>
+   <%= link_to '削除', bookmark, :confirm => 'Are you sure?', :method => :delete %>
+<% end %>
